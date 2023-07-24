@@ -25,6 +25,7 @@ const placingCard = (meals) => {
 document.getElementById("Search").addEventListener("click", () => {
   const search = document.getElementById("search-value");
   const searchValue = search.value;
+  search.setAttribute("placeholder", searchValue);
   console.log(searchValue);
   loadfood(searchValue);
   search.value = "";
